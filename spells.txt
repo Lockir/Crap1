@@ -1,0 +1,9 @@
+set amount of spells
+2 water spells
+2 fire spells - weaker than water
+
+Water Spell 1 - summmoning a geyser (direct damage, blocks projectiles, close range)
+Water Spell 2 - reduces damage taken
+
+Fire Spell 1 - fire shuriken
+Fire Spell 2 - dragon shoots out flame that increases with wingspan
