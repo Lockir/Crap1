@@ -2,7 +2,9 @@
 <html>
   <body>
     <div>
-      <p style="font-size:300%;"> You have been slain </p>
+      <p style="font-size:300%; text-align:center; font-family:verdana;"> You have been slain </p>
     </div>
+    <div>
+      <a href="index.html">Return to the beginning</a>
   </body>
   
