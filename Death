@@ -2,7 +2,7 @@
 <html>
   <body>
     <div>
-      <p> You have been slain </p>
+      <p style="font-size:300%;"> You have been slain </p>
     </div>
   </body>
   
