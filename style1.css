@@ -5,6 +5,7 @@ color: white;
 div {
   background-color: #3756DE;
   border: black 10px;
+  display: inline;
 }
 p {
   color: white;
