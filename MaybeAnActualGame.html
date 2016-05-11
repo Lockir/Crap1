@@ -1,6 +1,52 @@
 <!doctype html>
 <html>
-<head></head>
-<body>
+<head>
+  <script>
+    function preReq() {
+      gameArea.start();
+      gameChara = new component (30, 30, "maincharacter.png", 10, 120, "image");
+    }
+    var gameArea = {
+      document.createElement("canvas");
+      function () {
+        this.canvas.width = 800;
+        this.canvas.height = 600;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore)(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+    }
+      function component(width, height, color, x, y, type) {
+    this.type = type;
+    if (type == "image") {
+      this.image = new Image();
+      this.image.src = color;
+    }
+    this.width = width;
+    this.height = height;
+    this.speedX = 0;
+    this.speedY = 0; 
+    this.x = x;
+    this.y = y; 
+    this.update = function() {
+      ctx = gameArea.context;
+      if (type == "image") {
+        ctx.drawImage(this.image, 
+          this.x, 
+          this.y,
+          this.width, this.height);
+      } else {
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+      }
+    }
+  }
+    function updateGameArea() {
+      gameArea.clear();
+      gameChara.x += 1;
+      gameChara.update();
+  }
+  </script>
+</head>
+<body onload="preReq()">
 </body>
 </html>
